@@ -1,12 +1,23 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
-server="https://matrix.org"
-username="zabbix"
-password="XXXXXXXX"
+server="https://matrix.example.com"
+username="matrix_user"
+password="matrix_pass"
 
-log_path="/var/log/matrix/matrix_send_message.log"
-email_server="mail.corp.ru"
-email_admin=["admin@corp.ru"]
+log_path="/var/log/matrix-synapse/matrix_send_message.log"
+email_server="localhost"
+email_admin=["ADMIN@matrix.example.com"]
+zbx_tg_prefix = "zbxtg"
+
+zbx_matrix_tmp_dir = "/tmp/matrix_zabbix"
+
+zbx_matrix_signature = False
+
+zbx_server = "https://zabbix.example.com"  # zabbix server full url
+zbx_api_user = "zabbix_user"
+zbx_api_pass = "zabbix_pass"
+zbx_api_verify = False  # True - do not ignore self signed certificates, False - ignore
+
 
 DEBUG=True
